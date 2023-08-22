@@ -19,7 +19,8 @@ class Snake:
            self.add_seg(position)
 
     def add_seg(self, position):
-        new_segment = Turtle("img/snakehead.gif")            
+        new_segment = Turtle("img/snakehead.gif") 
+        # new_segment.shapesize(20, 20)           
         new_segment.penup()
         new_segment.goto(position)
         self.segments.append(new_segment)
